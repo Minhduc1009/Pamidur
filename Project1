@@ -1,0 +1,43 @@
+package NhapTen;
+
+import java.util.Scanner;
+
+public class DauVao {
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)) {
+			
+			String[] list = new String[10];
+			list[0] = "pham van sac";
+			list[1] = "Huynh Minh Tri";
+			list[2] = "pham van dong";
+			list[3] = "pham Minh Duc";
+			list[4] = "pham van nguon";
+			list[5] = "pham thi binh";
+			list[6] ="nguyen thi anh";
+			list[7] = "hoang van lam";
+			list[8] = "hoang thao my";
+			list[9] = "nguyen thi hang";
+			
+			
+			String answer ="ban khong phai la sinh vien truong nay";
+			
+			System.out.println("chao ban!");
+			System.out.print("moi ban nhap Ho Ten: ");
+			String name = sc.nextLine();
+			
+			for(String a : list) {
+				if (name.equalsIgnoreCase(a)) { 
+					//answer = "chao ban " + a;
+					System.out.println("chao ban: " + a);
+				System.out.print("moi ban nhap 4 so cuoi cua id: ");
+				int n = sc.nextInt();
+				if (n >=1000 && n <10000) {
+					answer = "moi ban vao";
+					}
+				}
+			}
+			System.out.println(answer);
+			}
+		}
+	}
+ 
