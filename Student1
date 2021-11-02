@@ -1,0 +1,54 @@
+package OOP;
+
+public class Student1 {
+	private String name;
+	private char gender;
+
+	public Student1() {
+		name = "Unknown";
+		gender = 'u';
+	}
+
+	public Student1(String name) {
+		this.name = name;
+		this.gender = 'u';
+	}
+
+	public Student1(char gender) {
+		this.name = "Unknown";
+		this.gender = gender;
+	}
+
+	public Student1(String name, char gender) {
+		this.name = name;
+		this.gender = gender;
+	}
+public void display() {
+	System.out.println("Name: " + name);
+    System.out.print("Gender: ");
+    switch(gender){
+        case 'm':
+            System.out.println("Male");
+            break;
+        case 'f':
+            System.out.println("Female");
+            break;
+        default:
+            System.out.println("Unknown");
+            break;
+    }
+}
+
+	public static void main(String[] args) {
+		Student1 s1 = new Student1("Trang", 'f');
+		s1.display();
+		Student1 s2 = new Student1("Duc", 'm');
+		s2.display();
+		Student1 s3 = new Student1("Nhi", 'f');
+		s3.display();
+		Student1 s4 = new Student1("Thu", 'f');
+		s4.display();
+
+	}
+
+}
