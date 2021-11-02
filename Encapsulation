@@ -1,0 +1,43 @@
+package OOP;
+
+public class Tinh_dong_goi {
+	private int id;
+	private String name;
+	private int age;
+	private int gpa;
+	
+	public Tinh_dong_goi(int id, String name, int age, int gpa) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.gpa = gpa;
+	}
+	public int getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public int getGpa() {
+		return gpa;
+	}
+	
+	public static void main(String[] args) {
+		Tinh_dong_goi s = new Tinh_dong_goi(9839, "Duc", 18, 7);
+		System.out.println("Id: " + s.getId());
+		System.out.println("Name: " + s.getName());
+		System.out.println("Age: " + s.getAge());
+		System.out.println("GPA: " + s.getGpa());
+		
+		Tinh_dong_goi a = new Tinh_dong_goi(9899, "Trang", 18, 6);
+		System.out.println("Id: " + a.getId());
+		System.out.println("Name: " + a.getName());
+		System.out.println("Age: " + a.getAge());
+		System.out.println("GPA: " + a.getGpa());
+		
+	}
+
+}
