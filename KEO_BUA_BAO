@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Game {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("TRO CHOI KEO BUA BAO");
+		System.out.println("--------------Rule----------------\n");
+		System.out.println("k ===> keo\nb ===> bua\na ===> bao\n");
+		System.out.println("----------------------------------");
+		System.out.print("player 1 choose: ");
+		char n1 = sc.next().charAt(0);
+		System.out.print("people 2 choose: ");
+		char n2 = sc.next().charAt(0);
+		
+		
+		String result = "Invalid selection";
+		
+		if(n1 == 'k') {
+			if (n2 == 'k' ) {
+				result = "draw";
+			} else if (n2 == 'b') {
+				result = "player 2 win";
+			} else if ( n2 == 'a' ) {
+				result = "player 1 win";
+			}
+		}
+		
+		if(n1 == 'b') {
+			if (n2 == 'b' ) {
+				result = "draw";
+			} else if (n2 == 'a') {
+				result = "player 2 win";
+			} else if ( n2 == 'k' ) {
+				result = "player 1 win";
+			}
+		}
+		
+		if(n1 == 'a') {
+			if (n2 == 'a' ) {
+				result = "draw";
+			} else if (n2 == 'k') {
+				result = "player 2 win";
+			} else if ( n2 == 'b' ) {
+				result = "player 1 win";
+			}
+		}
+		System.out.println("\n"+ result);
+	}
+}
