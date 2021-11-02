@@ -1,0 +1,55 @@
+package OOP;
+
+public class Date {
+private int day;
+private int month;
+private int year;
+
+public Date(int day, int month, int year) {
+	this.day = day;
+	this.month = month;
+	this.year = year;
+}
+public void setDate(int day, int month, int year) {
+	this.day = day;
+	this.month = month;
+	this.year = year;
+}
+public void setDay(int day) {
+	this.day = day;
+}
+public int getDay() {
+	return day;
+}
+public void setMonth(int month) {
+	this.month = month;
+}
+public int getMonth() {
+	return month;
+}
+public void setYear(int year) {
+	this.year = year;
+}
+public int getYear() {
+	return year;
+}
+public void dispay() {
+	String day = this.day + "";
+	String month = this.month + "";
+	String year = this.year + "";
+	if(this.day >=1 && this.day <=31 && day.length() == 1) {
+		day = "0" + day;
+	}
+	if(this.month >=1 && this.month <=12 && month.length() == 1) {
+		month = "0" + month;
+	}
+	System.out.println(day + "/" + month + "/" + year);
+}
+
+	public static void main(String[] args) {
+		Date s = new Date(2,13,2004);
+		s.dispay();
+		s.setMonth(14);
+		s.dispay();
+	}
+}
