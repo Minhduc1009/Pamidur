@@ -1,0 +1,356 @@
+package The_Tich;
+
+public class Tu_giac {
+private double ab;
+private double bc;
+private double cd;
+private double ad;
+private double height;
+
+public Tu_giac(double ab, double bc, double cd, double ad, double height) {
+	this.ab = ab;
+	this.bc = bc;
+	this.cd = cd;
+	this.ad = ad;
+	this.height = height;
+}
+public void setAb(double ab) {
+	this.ab = ab;
+}
+public double getAb() {
+	return ab;
+}
+public void setBc(double bc) {
+	this.bc = bc;
+}
+public double getBc() {
+	return bc;
+}
+public void setCd(double cd) {
+	this.cd= cd;
+}
+public double getCd() {
+	return cd;
+}
+public void setAd(double ad) {
+	this.ad = ad;
+}
+public double getAd() {
+	return ad;
+}
+public void setHeight(double height) {
+	this.height = height;
+}
+public double getHeight() {
+	return height;
+}
+public void display() {
+	String result = "Quadrangle";
+	double area = 0;
+	
+	String b = "rectangular"; // hinh chu nhat
+	String c = "square"; // hinh vuong
+	String d = "rhombus"; // hinh thoi
+	
+	double ac = Math.sqrt(Math.pow(ab,2)+Math.pow(bc,2));
+	double bd = Math.sqrt(Math.pow(ad,2)+Math.pow(cd,2));
+	if(ab == cd && ad == bc) { 
+		result = b;
+	} 
+	if ( ab == bc && ad == cd) {
+		if(ac == bd) {
+			result = c;
+		} else {
+			result = d;
+		}
+	}
+	System.out.println("Result: " + result);
+	
+	if(result == b) {
+		area = ab * bc;
+	} else if(result == c) {
+		area = ab *2;
+	} else if (result == d) {
+		area = (ac * bd)/2;
+	}
+	System.out.println("Area: " + area);
+	double volume = (area * height)/3;
+	System.out.println("Volume: " + volume);
+}
+}
+
+
+package The_Tich;
+
+public class Tam_giac {
+	private double ab;
+	private double bc;
+	private double ac;
+	private double height;
+	
+
+	public Tam_giac(double ab, double bc, double ac, double height) {
+		this.ab = ab;
+		this.bc = bc;
+		this.ac = ac;
+		this.height = height;
+		
+	}
+	public void setAb(double ab) {
+		this.ab = ab;
+	}
+	public double getAb() {
+		return ab;
+	}
+	public void setBc(double bc) {
+		this.bc = bc;
+	}
+	public double getBc() {
+		return bc;
+	}
+	public void setAc(double ac) {
+		this.ac= ac;
+	}
+	public double getAc() {
+		return ac;
+	}
+	public void display() {
+		String result = "Triangle";
+		double area = 0;
+		String d = "isosceles triangle at A"; // isosceles triangle: tam giac can
+		String g = "isosceles triangle at B";
+		String k = "isosceles triangle at C";
+		String e = "right triangle at A"; // right triangle: tam giac vuong
+		String m = "right triangle at B";
+		String n = "right triangle at C";
+		String f = "equilateral triangle"; // equilateral triangle: tam giac deu
+		
+		double a = Math.sqrt(Math.pow(ac,2)+Math.pow(ab,2));
+		double b = Math.sqrt(Math.pow(bc,2)+Math.pow(ab,2));
+		double c = Math.sqrt(Math.pow(ac,2)+Math.pow(bc,2));
+		if (ab == ac ) {
+			result = d;
+		} else if ( ab == bc) {
+			result = g;
+		} else {
+			result = k;
+		}
+		if (bc == a) {
+			result = e;
+		} else if (ac == b) {
+			result = m;
+		} else if(ab == c) {
+			result = n;
+		}
+		if (ab == ac && ab == bc) {
+			result = f;
+		}
+		System.out.println( "Result: " + result);
+		if(result == d) {
+			double h = Math.sqrt(Math.pow(ac,2)-Math.pow((bc/2), 2));
+			area = (bc * h)/2;
+			
+		} else if ( result == g) {
+			double h = Math.sqrt(Math.pow(ab,2)-Math.pow((ac/2), 2));
+			area = (ac * h)/2;
+		} else if ( result == k) {
+			double h = Math.sqrt(Math.pow(bc,2)-Math.pow((ab/2), 2));
+			area = (ab * h)/2;
+		}
+		if ( result == e) {
+			area = (ab * ac)/2;
+		} else if ( result == m) {
+			area = (ab*bc)/2;
+		} else if (result == n) {
+			area = (bc * ac)/2;
+		} 
+		if (result == f) {
+			area = (Math.pow(ab, 2)*Math.sqrt(3))/4;
+		}
+		System.out.println("Area: " + area);
+		double volume = (area * height)/3;
+		System.out.println("Volume: " + volume);
+	}
+}
+
+
+package The_Tich;
+
+public class Hinh_non {
+private double radius;
+private double height;
+private double length;
+
+public Hinh_non(double radius, double length, double height) {
+	this.radius = radius;
+	this.length = length;
+	this.height = height;
+}
+public void setRadius(double radius) {
+	this.radius = radius;
+}
+public double getRadius() {
+	return radius;
+}
+public void setLength(double length) {
+	this.length = length;
+}
+public double getLength() {
+	return length;
+	
+}
+public void setHeight(double heigth) {
+	this.height = height;
+}
+public double getHeight() {
+	return height;
+}
+public void display() {
+	double areaBottom = (Math.PI*Math.pow(radius,2));
+	double areaAround = Math.PI*length*radius;
+	double areaTotal = areaBottom + areaAround;
+	double volume = (areaBottom * height)/3;
+	System.out.println("Bottom Area: " + areaBottom + "\nAround Area: " + areaAround + "\nTotal Area: " + areaTotal + "\nVolume: " + volume);
+}
+}
+
+
+package The_Tich;
+
+public class Hinh_lang_tru {
+	private double radius;
+	private double height;
+	private double length;
+
+	public Hinh_lang_tru(double radius, double length, double height) {
+		this.radius = radius;
+		this.length = length;
+		this.height = height;
+	}
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	public double getRadius() {
+		return radius;
+	}
+	public void setLength(double length) {
+		this.length = length;
+	}
+	public double getLength() {
+		return length;
+		
+	}
+	public void setHeight(double heigth) {
+		this.height = height;
+	}
+	public double getHeight() {
+		return height;
+	}
+	public void display() {
+		double areaBottom = (Math.PI*Math.pow(radius,2))*2;
+		double areaAround = (Math.PI*length*radius)*2;
+		double areaTotal = areaBottom + areaAround;
+		double volume = (areaBottom * height);
+		System.out.println("Bottom Area: " + areaBottom + "\nAround Area: " + areaAround + "\nTotal Area: " + areaTotal + "\nVolume: " + volume);
+	}
+}
+
+
+package The_Tich;
+
+public class Khoi_cau {
+	private double radius;
+	public Khoi_cau(double radius) {
+		this.radius = radius;
+	}
+		public void setRadius(double radius) {
+			this.radius = radius;
+		}
+		public double getRadius() {
+			return radius;
+		}
+		public void display() {
+			double area = 4*Math.PI * Math.pow(radius, 2);
+			double volume = (4*Math.PI * Math.pow(radius, 3))/3;
+			System.out.println("Area: " + area + "\nVolume: " + volume );
+		}
+}
+
+
+package The_Tich;
+import java.util.Scanner;
+
+public class Khoi_Chop {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		 
+		System.out.println("What volume do you want to calculate?");
+		String name = sc.nextLine();
+		
+		if (name.equalsIgnoreCase("quadrangle")) { //tu giac
+			System.out.print("---------------------------------------------------\n");
+			System.out.print("input AB: ");
+			double ab = sc.nextDouble();
+			System.out.print("input BC: ");
+			double bc = sc.nextDouble();
+			System.out.print("input CD: ");
+			double cd = sc.nextDouble();
+			System.out.print("input AD: ");
+			double ad = sc.nextDouble();
+			System.out.print("input Heigth: ");
+			double h = sc.nextDouble();
+			System.out.print("---------------------------------------------------\n");
+			
+			Tu_giac s = new Tu_giac(ab, bc, cd, ad, h);
+			s.display();
+			
+		} else if (name.equalsIgnoreCase("triangle")) { //tam giac
+			System.out.print("---------------------------------------------------\n");
+			System.out.print("input AB: ");
+			double AB = sc.nextDouble();
+			System.out.print("input BC: ");
+			double BC = sc.nextDouble();
+			System.out.print("input AC: ");
+			double AC = sc.nextDouble();
+			System.out.print("input Height: ");
+			double H = sc.nextDouble();
+			System.out.print("---------------------------------------------------\n");
+			
+			Tam_giac a = new Tam_giac(AB , BC , AC, H);
+			a.display();
+			
+		} else if (name.equalsIgnoreCase("Cone")) { //hinh non
+			System.out.print("---------------------------------------------------\n");
+			System.out.print("input Radius: ");
+			double r = sc.nextDouble();
+			System.out.print("input Length: ");
+			double l = sc.nextDouble();
+			System.out.print("input Height: ");
+			double hh = sc.nextDouble();
+			System.out.print("---------------------------------------------------\n");
+			
+			Hinh_non b = new Hinh_non(r,l, hh);
+			b.display();
+		} else if(name.equalsIgnoreCase("cylinder")) { // hinh tru
+			System.out.print("---------------------------------------------------\n");
+			System.out.print("input Radius: ");
+			double rr = sc.nextDouble();
+			System.out.print("input Length: ");
+			double ll = sc.nextDouble();
+			System.out.print("input Height: ");
+			double hhh = sc.nextDouble();
+			System.out.print("---------------------------------------------------\n");
+			
+			Hinh_lang_tru b = new Hinh_lang_tru(rr,ll, hhh);
+			b.display();
+		} else if(name.equalsIgnoreCase("sphere")) { // khoi cau
+			System.out.print("---------------------------------------------------\n");
+			System.out.print("input Radius: ");
+			double rrr = sc.nextDouble();
+			Khoi_cau c = new Khoi_cau(rrr);
+			System.out.print("---------------------------------------------------\n");
+			c.display();
+		}	
+	}
+}
