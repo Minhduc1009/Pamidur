@@ -1,0 +1,59 @@
+package Tinh_Ke_Thua;
+
+public class Person {
+private String name;
+private int birth;
+
+public Person(String name, int birth) {
+	this.name = name;
+	this.birth = birth;
+	}
+public void setName(String name) {
+	this.name = name;
+}
+public String getName() {
+	return name;
+}
+public void setBirthd(int birth) {
+	this.birth = birth;
+}
+public int getBirth() {
+	return birth;
+	}
+}
+ 
+ ------------------------------------
+ package Tinh_Ke_Thua;
+
+class Student extends Person {
+	private double gpa;
+
+	public Student(String name, int birth, double gpa) {
+		// Gọi tới constructor 2 tham số của lớp cha
+		super(name, birth);
+		this.gpa = gpa;
+	}
+
+	public double getGpa() {
+		return gpa;
+	}
+
+	public void setGpa(double gpa) {
+		this.gpa = gpa;
+	}
+}
+
+------------------------------------
+package Tinh_Ke_Thua;
+
+public class Hello {
+		public static void main(String[] args) {
+			Student s = new Student("Duc", 2002, 8.8);
+			System.out.println("Name: " + s.getName());
+			System.out.println("Birth: " + s.getBirth());
+			System.out.println("GPA: " + s.getGpa());
+		}
+	}
+
+
+
