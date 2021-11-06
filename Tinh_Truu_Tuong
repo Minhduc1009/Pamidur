@@ -1,0 +1,88 @@
+package Tinh_Truu_Tuong;
+
+public  abstract class Person {
+protected String name;
+protected String address;
+
+public Person(String name, String address) {
+	this.name = name;
+	this.address = address;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getName() {
+	return name;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public String getAddress() {
+	return address;
+}
+public void display() {
+	
+}
+}
+
+-----------------------------------------------------------
+package Tinh_Truu_Tuong;
+
+public class Employee extends Person {
+private int balance;
+
+public Employee(String name, String address, int balance) {
+	super(name, address);
+	this.balance = balance;
+}
+public void setBalance(int balance) {
+	this.balance = balance;
+}
+public int getBalance () {
+	return balance;
+}
+@Override
+public void display() {
+	System.out.println("Name Employee: " + name);
+	System.out.println("Address Employee: " + address);
+	System.out.println("Balance Employee: " + balance);
+}
+}
+
+---------------------------------------------------
+package Tinh_Truu_Tuong;
+
+public class Manager extends Person {
+private int salary;
+
+public Manager(String name, String address, int salary) {
+	super(name, address);
+	this.salary = salary;
+}
+public void setSalary(int salary) {
+	this.salary = salary;
+}
+public int getSalary() {
+	return salary;
+}
+@Override
+public void display() {
+	System.out.println("Name Manager: " + name);
+	System.out.println("Address Manager: " + address);
+	System.out.println("Salary Manager: " + salary);
+	System.out.println("                                                   ");
+}
+}
+--------------------------------------------------
+package Tinh_Truu_Tuong;
+
+public class Show {
+
+	public static void main(String[] args) {
+		Person s = new Manager("Duc", "Hiep Tan", 2000);
+		s.display();
+		Person a = new Employee("Tri", "Thuan Nam", 1000);
+	    a.display();
+	}
+
+}
