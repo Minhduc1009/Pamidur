@@ -1,0 +1,113 @@
+package Kinh_Ngay_Thuong;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Muốn tìm Kinh nào Đức ?");
+			System.out.println("                                 ");
+			
+			String name = sc.nextLine();
+			
+			
+			switch(name){
+				case "Kinh Lạy Cha" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Cha chúng con ở trên trời, chúng con nguyện danh Cha cả sáng\n nước Cha trị đến, ý Cha thể hiện dưới đất cũng như trên trời.\n Xin Cha cho chúng con hôm nay lương thực hằng ngày,\n và tha nợ chúng con như chúng con cũng tha kẻ có nợ chúng con.\n Xin chớ để chúng con xa chước cám dỗ, nhưng cứu chúng con cho khỏi sự dữ. Amen");
+					break;
+				case "Kinh Kính Mừng" :
+					System.out.println("                                 ");
+					System.out.println("Kính mừng Maria đầy ơn phúc, Đức Chúa Trời ở cùng Bà,\n Bà có phúc lạ hơn mọi người nữ và Giêsu con lòng bà gồm phúc lạ,\n     Thánh Maria Đức Mẹ Chúa Trời, cầu cho chúng con là kẻ có tội khi nay và trong giờ lâm tử. Amen");
+					break;
+				case "Kinh Sáng Danh" :
+					System.out.println("                                 ");
+					System.out.println("Sáng Danh Đức Chúa Cha, và Đức Chúa Con, và Đức Chúa Thánh Thần.\nNhư đã có trước vô cùng, và bây giờ và hằng có và đời đời chẳng cùng. Amen");
+					break;
+				case "Kinh Tin" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Chúa, con tin thật có một Đức Chúa Trời là Đấng thưởng phạt vô cùng.\n Con lại tin thật Đức Chúa Trời có Ba Ngôi,\n mà Ngôi Thứ Hai đã xuống thế làm người,\n chịu nạn chịu chết mà chuộc tội cho thiên hạ.\n Bấy nhiêu điều ấy, cũng các điều Hội Thánh dạy,\n thì con tin vững vàng,\n vì Chúa là Đấng thông minh và chân thật vô cùng đã phán truyền cho Hội Thánh. Amen");
+					break;
+				case "Kinh Cậy" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Chúa, con trông cậy vững vàng,\n vì công nghiệp Đức Chúa Giêsu, thì Chúa sẽ ban ơn cho con giữ đạo nên ở đời này,\n cho ngày sau được lên Thiên đàng xem thấy mặt Đức Chúa Trời hưởng phúc đời đời,\n vì Chúa là Đấng phép tắc và lòng lành vô cùng đã phán hứa sự ấy, chẳng có lẽ nào sai được. Amen");
+					break;
+				case "Kinh Mến" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Chúa, con kính mến Chúa hết lòng hết sức trên hết mọi sự,\n vì Chúa là Đấng trọn lành vô cùng.\n Lại vì Chúa thì con thương yêu người ta như mình con vậy. Amen");
+					break;
+				case "Kinh Ăn Năn Tội" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Chúa, Chúa là Đấng trọn tốt trọn lành vô cùng,\n Chúa đã dựng nên con và cho Con Chúa ra đời chịu nạn chịu chết vì con,\n mà con đã cả lòng phản nghịch lỗi nghĩa cùng Chúa,\n thì con lo buồn đau đớn cùng chê ghét mọi tội con trên hết mọi sự.\n Con dốc lòng chừa cải và nhờ ơn Chúa thì con sẽ lánh xa dịp tội,\n cùng làm việc đền tội cho xứng. Amen");
+					break;
+				case "Kinh Đức Chúa Thánh Thần" :
+					System.out.println("                                 ");
+					System.out.println("Chúng con lạy ơn Đức Chúa Thánh Thần thiêng liêng sáng láng vô cùng,\n chúng con xin Đức Chúa Thánh Thần xuống đầy lòng chúng con,\n là kẻ tin cậy Đức Chúa Trời và kính mến Đức Chúa Trời trong lòng chúng con,\n chúng con xin Đức Chúa Thánh Thần xuống.\n Thưa: sửa lại mọi sự trong ngoài chúng con.\n Chúng con cầu cùng Đức Chúa Trời xưa đã cho Đức Chúa Thánh Thần xuống soi lòng dạy dỗ các Thánh Tông đồ,\n thì rày chúng con cũng xin Đức Chúa Trời cho Đức Chúa Thánh Thần lại xuống,\n yên ủi dạy dỗ chúng con làm những việc lành,\n vì công nghiệp vô cùng Đức Chúa Giêsu là Chúa chúng con. Amen");
+					break;
+				case "Kinh Cám Ơn" :
+					System.out.println("                                 ");
+					System.out.println("Con cám ơn Đức Chúa Trời là Chúa lòng lành vô cùng,\n chẳng bỏ con, chẳng để con không đời đời, mà lại sinh ra con cho con được làm người,\n cùng hằng gìn giữ con, hằng che chở con,\n lại cho Ngôi Hai xuống thế làm người, chuộc tội chịu chết trên cây Thánh Giá vì con,\n lại cho con được đạo Thánh Đức Chúa Trời, cùng chịu nhiều ơn nhiều phép Hội Thánh nữa,\n và đã cho phần xác con (ngày/đêm) hôm nay được mọi sự lành,\n lại cứu lấy con kẻo phải chết tươi ăn năn tội chẳng kịp.\n Vậy các Thánh ở trên nước Thiên đàng cám ơn Đức Chúa Trời thế nào,\n thì con cũng hợp cùng các Thánh mà dâng cho Chúa, cùng cám ơn như vậy. Amen");
+					break;
+				case "Kinh Thờ Lạy" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Chúa con, con là vật phàm hèn cùng là không trước mặt Chúa,\n con hết lòng thờ lạy và nhận thật Chúa là đầu cội rễ mọi sự,\n cũng là sau hết mọi loài. Chúa đã dựng nên con cũng thật là Chúa con nữa,\n thì con xin dâng linh hồn và xác cùng mọi sự trong ngoài con ở trong tay Chúa. Amen");
+					break;
+				case "Kinh Đội Ơn" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Chúa con, con đội ơn Chúa vì những ơn lành Chúa đã ban cho con xưa nay,\n nhất là dựng nên con và cho Con Chúa chịu chết mà chuộc tội, lại chọn lấy con làm con Hội Thánh nữa. Amen");
+					break;
+				case "Kinh Cáo Mình" :
+					System.out.println("                                 ");
+					System.out.println("Con thú nhận cùng Thiên Chúa toàn năng và cùng anh chị em,\n con đã phạm tội nhiều trong tư tưởng, lời nói, việc làm,\n và những điều thiếu sót lỗi tại tôi, lỗi tại tôi, lỗi tại tôi mọi đàng.\n Vì vậy con xin Rất Thánh Đức Bà Maria trọn đời đồng trinh, các Thiên Thần,\n các Thánh và anh chị em khẩn cầu cho con trước toàn Thiên Chú, Chúa chúng con.  ");
+					break;
+				case "Kinh Phù Hộ" :
+					System.out.println("                                 ");
+					System.out.println("Chúng con thờ lạy ngợi khen Chúa, là Đấng có phép tắc vô cùng,\n đã thương để chúng con đến sớm mai nay,\n thì xin Chúa xuống ơn phù hộ cho chúng con tốt ngày hôm nay khỏi xa phạm tội gì.\n Lại xin Chúa sửa sự lo, lời nói, việc làm chúng con hằng nên trọn lành theo ý Chúa.\n Vì công nghiệp Đức Chúa Giêsu là Đấng hằng sống hằng trị cùng Đức Chúa Cha\n và Đức Chúa Thánh Thần đời đời chẳng cùng. Amen");
+					break;
+				case "Kinh Sáng Soi" :
+					System.out.println("                                 ");
+					System.out.println("Cúi xin Chúa sáng soi cho chúng con biết việc phải làm,\n cùng khi làm xin Chúa giúp đỡ cho mỗi kinh mỗi việc chúng con,\n từ khỏi sự cho đến hoàn thành đều nhờ bởi ơn Chúa. Amen");
+					break;
+				case "Kinh Lạy Nữ Vương" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Nữ Vương Mẹ nhân lành làm cho chúng con được sống, được vui được cậy:\n Thân lạy Mẹ, chúng tôi con cháu Eva ở chốn khách đầy, kêu đến cùng Bà.\n Chúng con ở nơi khóc lóc than, thở kêu khẩn Bà thương.\n Hỡi ôi! Bà là chủ bầu chúng con, xin ghé mắt thương xem chúng con.\n Dến sau khỏi đày xin cho chúng con được thấy Con lòng Bà gồm phúc lạ.\n   Ôi! khoan thay! nhân thay! dịu thay! Thánh Maria trọn đời đồng trinh.\n Thánh Maria trọn đời đồng trinh. Amen");
+					break;
+				case "Kinh Hãy Nhớ" :
+					System.out.println("                                 ");
+					System.out.println("Lạy Thánh Nữ Maria là Mẹ rất nhân từ,\n xin hãy nhớ: xưa nay chưa từng có người nào chạy đến cùng Đức Mẹ,\n xin bầu chữa cứu giúp mà Đức Mẹ từ bỏ chẳng nhậm lời.\n Nhân vì sự ấy, con lấy lòng trông cậy, than van, chạy đến sấp mình xuống dưới chân Đức Mẹ\n là Nữ Đồng Trinh trên hết các kẻ đồng trinh, xin Đức Mẹ đoái đến con là kẻ tội lội.\n Lạy Mẹ là Mẹ Chúa Cứu Thế, xin chớ bỏ lời con kêu xin,\n một dủ lòng thương mà nhậm lời con cùng. Amen");
+					break;
+				case "Kinh Mười Điều Răn" :
+					System.out.println("                                 ");
+					System.out.println("Đạo Đức Chúa Trời có Mười Điều Răn:\n Thứ nhất: thờ phượng một Đức Chúa Trời và kính mến Người trên hết mọi sự.\n Thứ Hai: chớ kêu Tên Đức Chúa Trời vô cớ.\n Thứ ba: giữ ngày Chúa Nhật.\n Thứ bốn: thảo kính cha mẹ.\n Thứ năm: chớ giết người.\n Thứ sáu: chớ làm sự dâm dục.\n Thứ bảy: chớ lấy của người.\n Thứ tám: chớ làm chứng dối.\n Thứ chín: chớ muốn vợ chồng người.\n Thứ mười: chớ tham của người.\n   Mười Điều Răn ấy tóm về hai này mà chớ:\n trước kính mến một Đức Chúa Trời trên hết mọi sự,\n sau lại yêu người như mình ta vậy. Amen");
+					break;
+				case "Kinh Sáu Điều Răn" :
+					System.out.println("                                 ");
+					System.out.println("Hội Thánh có Sáu Điều Răn:\n Thứ nhất: xem lễ ngày Chúa Nhật cùng các ngày lễ buộc.\n Thứ hai: chớ làm việc xác ngày Chúa Nhật cùng các ngày lễ buộc.\n Thứ ba: xưng tội trong một năm ít là một lần.\n Thứ bốn: chịu Mình Thánh Đức Chúa Giêsu trong Mùa Phục Sinh.\n Thứ năm: giữ chay những ngày Hội Thánh buộc.\n Thứ sáu: kiêng thịt ngày thứ sáu cùng các ngày khác Hội Thánh dạy.");
+					break;
+				case "Kinh Bảy Phép Bí Tích" :
+					System.out.println("                                 ");
+					System.out.println("Đạo Đức Chúa Trời có Bảy Phép Bí Tích:\n Thứ nhất: là phép Rửa tội.\n Thứ hai: là phép Thêm sức.\n Thứ ba: là phép Mình Thánh Chúa.\n Thứ bốn: là phép Giải tội.\n Thứ năm: là phép Xức dầu Thánh.\n Thứ sáu: là phép Truyền Chức Thánh.\n Thứ bảy: là phép Hôn phối. ");
+					break;
+				case "Kinh Mười Bốn Mối" :
+					System.out.println("                                 ");
+					System.out.println("Thương người có mười bốn mối\nThương xác bảy mối\n\n Thứ nhất: cho kẻ đói ăn.\n Thứ hai: cho kẻ khát uống.\n Thứ ba: cho kẻ rách rưới ăn mặc.\n Thứ bốn: viếng kẻ liệt cùng kẻ tù rạc.\n Thứ năm: cho khách đỗ nhà.\n Thứ sáu: chuộc kẻ làm tôi.\n Thứ bảy: chôn xác kẻ chết.\n\nThương linh hồn bảy mối\n\n Thứ nhất: lấy lời lành mà khuyên người.\n Thứ hai: mở dạy kẻ mê muội.\n Thứ ba: yên ủi kẻ âu lo.\n Thứ bốn: răn bảo kẻ có tội.\n Thứ năm: tha kẻ dể ta.\n Thứ sáu: nhịn kẻ mất lòng ta.\n Thứ bảy: cầu cho kẻ sống và kẻ chết.");
+					break;
+				case "Kinh Cải Tội Bảy Mối" :
+					System.out.println("                                 ");
+					System.out.println("Cải tội bảy mối có bảy đức:\n Thứ nhất: khiêm nhường, chớ kêu ngạo.\n Thứ hai: rộng rãi, chớ hà tiện.\n Thứ ba: giữ mình sạch sẽ, chớ mê dâm dục.\n Thứ bốn: hay nhịn, chớ hờn giận.\n Thứ năm: kiêng bớt, chớ mê ăn uống.\n Thứ sáu: yêu người, chớ ghen ghét.\n Thứ bảy: siêng năng việc Đức Chúa Trời, chớ làm biếng.");
+					break;
+				case "Kinh Phúc Thật Tám Mối" :
+					System.out.println("                                 ");
+					System.out.println("Phúc thật tám mối\n\n Thứ nhất: ai có lòng khó khăn, ấy là phúc thật, vì chưng Nước Đức Chúa Trời là của mình vậy.\n Thứ hai: ai hiền lành, ấy là phúc thật, vì chưng sẽ được đất đức Chúa Trời làm của mình vậy.\n Thứ ba: ai khóc lóc, ấy là phúc thật, vì chưng sẽ được an ủi vậy.\n Thứ tư: ai khao khát nhân đức trọn lành, ấy là phúc thật, vì chưng sẽ được no đủ vậy.\n Thứ năm: ai thương xót người, ấy là phúc thật, vì chưng sẽ được thương xót vậy.\n Thứ sáu: ai giữ lòng sạch sẽ, ấy là phúc thật, vì chưng sẽ được nhìn Thấy mặt Đức Chúa Trời vậy.\n Thứ bảy: ai làm cho người hòa thuận, ấy là phúc thật, vì chưng sẽ được gọi là con Đức Chúa Trời vậy.\n Thứ tám: ai chịu khốn nạn vì đạo ngay, ấy là phúc thật, vì chưng Nước Đức Chúa Trời là của mình vậy.");
+					break;
+				case "Kinh Đức Thánh Thiên Thần" :
+					System.out.println("                                 ");
+					System.out.println(" Con thân Đức Thánh Thiên Thần tính thiêng liêng sáng láng,\n con cám ơn Đức Thánh Thiên Thần giữ con từ thuở mới sinh đến nay cho khỏi tay quỉ,\n Đức Thánh Thiên Thần là Thầy con, mở lòng cho con biết được đạo Thánh Chúa Trời đất.\n Vì vậy con cầu cùng Đức Chúa Thánh Thần giữ con ban ngày, xem con ban đêm, cho đến trọn đời, kẻo ma quỉ dữ cám dỗ được con.\n Con lạy Đức Thánh Thiên Thần khẩn nguyện cho con thông minh sáng láng giữ mười điều răn, chừa mọi sự dữ.\n Đến khi con lâm chung, xin cùng Đức Chúa Trời cho linh hồn con được lên ở cùng Đức Chúa Trời và Thánh Thiên Thần hằng sống vui vẻ đời đời chẳng cùng. Amen ");
+					break;
+				default: 
+					System.out.println("Chưa có Đức ơi");
+			}
+		}
+	}
+}
+
