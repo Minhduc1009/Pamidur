@@ -1,0 +1,19 @@
+public class job2 {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a positive integer: ");
+		int n = sc.nextInt();
+		int count = 0;
+		String result = "Enter wrong!";
+		
+		if(n > 1) {
+			for(int i = 2; i < n; i++) 
+				if(n % i == 0) count++;
+			if (count == 0) result = n + " is a prime number";
+			else result = n + " isn't a prime number";
+		} else if (n == 1) result = "1 isn't a prime number";
+		
+		System.out.println("Result: " + result);
+	}
+}
