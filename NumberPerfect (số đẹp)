@@ -1,0 +1,20 @@
+// tìm số đẹp
+// số đẹp là dãy số không có số nào lặp lại
+
+public static boolean soDep(long n){
+		boolean[] check = new boolean[10];
+		
+		for (int i = 0; i < check.length; i++) {
+			check[i] = false;
+		}
+		
+		long temp = 0;
+			
+		while(n != 0) {
+			temp = n % 10;
+			if(check[(int) temp] == true) return false;
+			else check[(int) temp] = true;
+			n/=10;
+		}
+		return true;
+   }
